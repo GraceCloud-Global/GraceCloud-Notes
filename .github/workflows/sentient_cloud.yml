@@ -1,0 +1,29 @@
+﻿name: Sentient-Cloud
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+jobs:
+  sentient_cycle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run Sentient Fusion
+        run: |
+          python ai/fusion/core.py
+          python ai/learning/train.py
+          python ai/sentience/network.py
+          python infra/sentient/governance.py
+      - name: Upload Sentient State
+        uses: actions/upload-artifact@v4
+        with:
+          name: sentient-cloud
+          path: |
+            ai/fusion/state.json
+            ai/learning/reward.json
+            ai/sentience/network.json
+            infra/sentient/governance.json

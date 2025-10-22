@@ -1,0 +1,3 @@
+﻿*/3 * * * * /usr/bin/python3 /home/ubuntu/gracealoneaba/ai/predictive/governance.py
+*/4 * * * * /usr/bin/python3 /home/ubuntu/gracealoneaba/ai/collab/matrix.py
+*/5 * * * * /usr/bin/python3 /home/ubuntu/gracealoneaba/ai/insight/analysis.py

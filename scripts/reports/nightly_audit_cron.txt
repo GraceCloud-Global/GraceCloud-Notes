@@ -1,0 +1,4 @@
+﻿0 4 * * * /usr/bin/python3 /home/ubuntu/gracealoneaba/backend/docs/autodoc_gen.py
+15 4 * * * /usr/bin/python3 /home/ubuntu/gracealoneaba/backend/compliance/audit_runner.py
+30 4 * * * /usr/bin/python3 /home/ubuntu/gracealoneaba/ai/auditor/static_audit.py
+45 4 * * * /usr/bin/python3 /home/ubuntu/gracealoneaba/ai/governance/validate.py

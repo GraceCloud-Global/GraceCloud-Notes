@@ -1,0 +1,3 @@
+﻿*/2 * * * * /usr/bin/python3 /home/ubuntu/gracealoneaba/ai/orchestrator/core.py
+*/5 * * * * /usr/bin/python3 /home/ubuntu/gracealoneaba/ai/selfheal/heal.py
+*/6 * * * * /usr/bin/python3 /home/ubuntu/gracealoneaba/ops/autoscale/brain.py

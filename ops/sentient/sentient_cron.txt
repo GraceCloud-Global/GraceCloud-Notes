@@ -1,0 +1,4 @@
+﻿*/4 * * * * /usr/bin/python3 /home/ubuntu/gracealoneaba/ai/fusion/core.py
+*/5 * * * * /usr/bin/python3 /home/ubuntu/gracealoneaba/ai/learning/train.py
+*/6 * * * * /usr/bin/python3 /home/ubuntu/gracealoneaba/ai/sentience/network.py
+*/7 * * * * /usr/bin/python3 /home/ubuntu/gracealoneaba/infra/sentient/governance.py

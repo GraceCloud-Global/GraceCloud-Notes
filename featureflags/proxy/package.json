@@ -1,0 +1,8 @@
+﻿{
+  "name": "unleash-proxy",
+  "version": "1.0.0",
+  "dependencies": {
+    "@unleash/proxy": "^2.5.1",
+    "express": "^4.19.2"
+  }
+}

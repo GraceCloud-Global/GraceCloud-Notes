@@ -1,0 +1,39 @@
+﻿apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gracealone-api
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: gracealone-api
+  template:
+    metadata:
+      labels:
+        app: gracealone-api
+    spec:
+      containers:
+        - name: api
+          image: gracealone/api:latest
+          ports:
+            - containerPort: 8000
+          readinessProbe:
+            httpGet:
+              path: /api/metrics/summary/
+              port: 8000
+          livenessProbe:
+            httpGet:
+              path: /api/health/
+              port: 8000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: gracealone-api-svc
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 80
+      targetPort: 8000
+  selector:
+    app: gracealone-api

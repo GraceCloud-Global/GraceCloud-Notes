@@ -1,0 +1,11 @@
+﻿version: '3.9'
+services:
+  continuum-api:
+    image: gracealone/continuum-api:latest
+    ports: ['9800:9800']
+  continuum-worker:
+    image: gracealone/continuum-worker:latest
+    ports: ['9801:9801']
+networks:
+  continuum:
+    driver: bridge

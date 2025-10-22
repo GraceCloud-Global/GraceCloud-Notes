@@ -1,0 +1,27 @@
+﻿name: Global-Cognitive-Grid
+on:
+  schedule:
+    - cron: '*/20 * * * *'
+  workflow_dispatch:
+jobs:
+  cognitive_grid:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: |
+          python ai/memory/node.py
+          python ai/memory/aggregate.py
+          python ai/awareness/engine.py
+          python ai/sync/grid.py
+      - name: Upload Grid State
+        uses: actions/upload-artifact@v4
+        with:
+          name: cognitive-grid
+          path: |
+            ai/memory/global/state.json
+            ai/awareness/state.json
+            ai/sync/grid_state.json

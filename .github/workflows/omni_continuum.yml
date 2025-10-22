@@ -1,0 +1,26 @@
+﻿name: Omni-Continuum
+on:
+  schedule:
+    - cron: '*/25 * * * *'
+  workflow_dispatch:
+jobs:
+  omni_cycle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: |
+          python ai/omni/core.py
+          python ai/collective/network.py
+          python ai/predictivecore/predict.py
+      - name: Upload Omni Intelligence Data
+        uses: actions/upload-artifact@v4
+        with:
+          name: omni-continuum
+          path: |
+            ai/omni/state.json
+            ai/collective/state.json
+            ai/predictivecore/state.json

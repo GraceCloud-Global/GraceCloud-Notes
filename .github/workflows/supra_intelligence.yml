@@ -1,0 +1,26 @@
+﻿name: Supra-Intelligence
+on:
+  schedule:
+    - cron: '*/25 * * * *'
+  workflow_dispatch:
+jobs:
+  supra_cycle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: |
+          python ai/neuralgrid/core.py
+          python ai/temporal/engine.py
+          python ai/reason/logic.py
+      - name: Upload Supra Data
+        uses: actions/upload-artifact@v4
+        with:
+          name: supra-intelligence
+          path: |
+            ai/neuralgrid/state.json
+            ai/temporal/state.json
+            ai/reason/state.json

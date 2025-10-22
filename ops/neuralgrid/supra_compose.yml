@@ -1,0 +1,11 @@
+﻿version: '3.9'
+services:
+  supra-api:
+    image: gracealone/supra-api:latest
+    ports: ['9700:9700']
+  supra-worker:
+    image: gracealone/supra-worker:latest
+    ports: ['9701:9701']
+networks:
+  supra-net:
+    driver: bridge

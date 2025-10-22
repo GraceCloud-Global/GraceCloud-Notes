@@ -1,0 +1,13 @@
+﻿rules:
+  - id: 1
+    name: Data Encryption Required
+    condition: storage.encrypted == true
+    severity: HIGH
+  - id: 2
+    name: Audit Logging Enabled
+    condition: logging.enabled == true
+    severity: MEDIUM
+  - id: 3
+    name: MFA Required
+    condition: auth.mfa == true
+    severity: CRITICAL

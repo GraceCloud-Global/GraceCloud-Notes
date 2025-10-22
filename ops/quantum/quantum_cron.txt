@@ -1,0 +1,3 @@
+﻿*/6 * * * * /usr/bin/python3 /home/ubuntu/gracealoneaba/ai/quantum/decision_core.py
+*/6 * * * * /usr/bin/python3 /home/ubuntu/gracealoneaba/ai/consensus/raft.py
+*/7 * * * * /usr/bin/python3 /home/ubuntu/gracealoneaba/ai/adaptive/cognition.py

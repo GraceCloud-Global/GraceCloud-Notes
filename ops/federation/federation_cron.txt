@@ -1,0 +1,4 @@
+﻿*/4 * * * * /usr/bin/python3 /home/ubuntu/gracealoneaba/ai/federation/register.py
+*/6 * * * * /usr/bin/python3 /home/ubuntu/gracealoneaba/ai/federation/coordinate.py
+*/8 * * * * /usr/bin/python3 /home/ubuntu/gracealoneaba/ai/meta/brain.py
+*/10 * * * * /usr/bin/python3 /home/ubuntu/gracealoneaba/ai/recursive/selfsync.py

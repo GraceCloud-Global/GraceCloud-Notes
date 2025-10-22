@@ -1,0 +1,14 @@
+﻿version: '3.9'
+services:
+  control-tower:
+    image: gracealone/control-tower:latest
+    ports: ['9400:9400']
+  planetary:
+    image: gracealone/planetary:latest
+    ports: ['9500:9500']
+  autoscaler:
+    image: gracealone/autoscaler:latest
+    ports: ['9600:9600']
+networks:
+  global:
+    driver: bridge

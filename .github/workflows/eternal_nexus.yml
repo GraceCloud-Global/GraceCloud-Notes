@@ -1,0 +1,26 @@
+﻿name: Eternal-Nexus
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+jobs:
+  nexus_cycle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: |
+          python ai/nexus/core.py
+          python ai/dimensional/core.py
+          python ai/knowledge/generator.py
+      - name: Upload Nexus State
+        uses: actions/upload-artifact@v4
+        with:
+          name: eternal-nexus
+          path: |
+            ai/nexus/state.json
+            ai/dimensional/state.json
+            ai/knowledge/state.json

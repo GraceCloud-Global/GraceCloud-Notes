@@ -1,0 +1,4 @@
+﻿*/3 * * * * /usr/bin/python3 /home/ubuntu/gracealoneaba/ai/memory/node.py
+*/5 * * * * /usr/bin/python3 /home/ubuntu/gracealoneaba/ai/memory/aggregate.py
+*/7 * * * * /usr/bin/python3 /home/ubuntu/gracealoneaba/ai/awareness/engine.py
+*/9 * * * * /usr/bin/python3 /home/ubuntu/gracealoneaba/ai/sync/grid.py

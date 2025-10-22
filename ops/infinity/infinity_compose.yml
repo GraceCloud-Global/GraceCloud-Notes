@@ -1,0 +1,11 @@
+﻿version: '3.9'
+services:
+  infinity-api:
+    image: gracealone/infinity-api:latest
+    ports: ['9900:9900']
+  infinity-worker:
+    image: gracealone/infinity-worker:latest
+    ports: ['9901:9901']
+networks:
+  infinity-net:
+    driver: bridge

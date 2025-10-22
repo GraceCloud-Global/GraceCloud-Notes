@@ -1,0 +1,22 @@
+﻿receivers:
+  otlp:
+    protocols:
+      http:
+      grpc:
+
+exporters:
+  otlp:
+    endpoint: tempo:4317
+    tls:
+      insecure: true
+  debug: {}
+
+processors:
+  batch: {}
+
+service:
+  pipelines:
+    traces:
+      receivers: [otlp]
+      processors: [batch]
+      exporters: [otlp, debug]

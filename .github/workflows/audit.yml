@@ -1,0 +1,29 @@
+﻿name: Governance-Audit
+on:
+  schedule:
+    - cron: '0 4 * * *'
+  workflow_dispatch:
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: |
+          pip install pyyaml
+          python backend/docs/autodoc_gen.py
+          python backend/compliance/audit_runner.py
+          python ai/auditor/static_audit.py
+          python ai/governance/validate.py
+      - name: Upload Audit Reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: governance-reports
+          path: |
+            backend/docs/*.md
+            backend/compliance/*.json
+            ai/auditor/reports/*.json
+            ai/governance/validation_report.json

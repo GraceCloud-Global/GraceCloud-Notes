@@ -1,0 +1,567 @@
+2025-10-20T06:20:01.4139640Z Container start method called.
+2025-10-20T06:20:01.4147567Z Establishing network.
+2025-10-20T06:20:01.4155043Z Pulling image: gracealoneacr.azurecr.io/gracealone-api:v1.
+2025-10-20T06:21:07.3156284Z Image gracealoneacr.azurecr.io/gracealone-api:v1 is pulled from registry gracealoneacr.azurecr.io
+2025-10-20T06:21:07.3244091Z Container is starting.
+2025-10-20T06:21:07.3262627Z Establishing user namespace if not established already.
+2025-10-20T06:21:07.3276170Z Establishing network if not established already.
+2025-10-20T06:21:07.3456232Z Mounting volumes.
+2025-10-20T06:21:07.3565624Z Nested mountpoint volatile/logs
+2025-10-20T06:21:07.3677634Z Nested mountpoint 
+2025-10-20T06:21:07.4474282Z Creating container.
+2025-10-20T06:21:07.4480576Z Creating pipes for streaming container io.
+2025-10-20T06:21:07.4483090Z Creating stdout named pipe at /podr/container/pipe/b1f69d04bf29_gracealone-api/stdout_d98910b112f04d7e835a18f36362112d.
+2025-10-20T06:21:07.4861816Z Successfully created stdout named pipe at: /podr/container/pipe/b1f69d04bf29_gracealone-api/stdout_d98910b112f04d7e835a18f36362112d.
+2025-10-20T06:21:07.4868656Z Opening named pipe /podr/container/pipe/b1f69d04bf29_gracealone-api/stdout_d98910b112f04d7e835a18f36362112d for reading in non-blocking mode.
+2025-10-20T06:21:07.4873308Z Successfully opened named pipe: /podr/container/pipe/b1f69d04bf29_gracealone-api/stdout_d98910b112f04d7e835a18f36362112d.
+2025-10-20T06:21:07.4880859Z Successfully removed non-blocking flag from /podr/container/pipe/b1f69d04bf29_gracealone-api/stdout_d98910b112f04d7e835a18f36362112d.
+2025-10-20T06:21:07.4958597Z Creating stderr named pipe at /podr/container/pipe/b1f69d04bf29_gracealone-api/stderr_0cf206364bf34905a2429ac5c4057720.
+2025-10-20T06:21:07.4963413Z Successfully created stderr named pipe at: /podr/container/pipe/b1f69d04bf29_gracealone-api/stderr_0cf206364bf34905a2429ac5c4057720.
+2025-10-20T06:21:07.5163208Z Opening named pipe /podr/container/pipe/b1f69d04bf29_gracealone-api/stderr_0cf206364bf34905a2429ac5c4057720 for reading in non-blocking mode.
+2025-10-20T06:21:07.5165403Z Successfully opened named pipe: /podr/container/pipe/b1f69d04bf29_gracealone-api/stderr_0cf206364bf34905a2429ac5c4057720.
+2025-10-20T06:21:07.5667958Z Successfully removed non-blocking flag from /podr/container/pipe/b1f69d04bf29_gracealone-api/stderr_0cf206364bf34905a2429ac5c4057720.
+2025-10-20T06:21:07.5670328Z Overriding PORT environment variable with port exposed by container image.
+2025-10-20T06:21:07.8173635Z Container image does not expose any ports. Defaulting to port 80
+2025-10-20T06:21:07.8181132Z Setting value of PORT variable to 80
+2025-10-20T06:21:07.8189981Z Creating container with image: gracealoneacr.azurecr.io/gracealone-api:v1 from registry: gracealoneacr.azurecr.io and fully qualified image name: gracealoneacr.azurecr.io/gracealone-api:v1
+2025-10-20T06:21:08.4227922Z Starting container: b1f69d04bf29_gracealone-api.
+2025-10-20T06:21:08.5133459Z Starting watchers and probes.
+2025-10-20T06:21:08.5340362Z Starting metrics collection.
+2025-10-20T06:21:08.5360767Z Container is running.
+2025-10-20T06:21:08.6066195Z Container start method finished after 67192 ms.
+2025-10-20T06:21:08.7465681Z Container has finished running with exit code: 127.
+2025-10-20T06:21:08.7874339Z Container is terminating. Grace period: 5 seconds.
+2025-10-20T06:21:08.8279485Z Stop and delete container. Retry count = 0
+2025-10-20T06:21:08.8365450Z Stopping container: b1f69d04bf29_gracealone-api.
+2025-10-20T06:21:09.0031764Z Deleting container: b1f69d04bf29_gracealone-api. Retry count = 0
+2025-10-20T06:21:09.4495701Z Container spec TerminationMessagePolicy  path 
+2025-10-20T06:21:09.4669414Z Container is terminated. Total time elapsed: 671 ms.
+2025-10-20T06:21:09.4679034Z Site container: gracealone-api terminated during site startup.
+2025-10-20T06:21:09.4842221Z Site startup probe failed after 0.7854666 seconds.
+2025-10-20T06:21:09.5298922Z Failed to start site. Revert by stopping site.
+2025-10-20T06:21:09.5784620Z Site: gracealone-api stopped.
+2025-10-20T06:21:14.135Z INFO  - Pulling image: gracealoneacr.azurecr.io/gracealone-api:v1
+2025-10-20T06:21:14.537Z INFO  - v1 Pulling from gracealone-api
+2025-10-20T06:21:14.566Z INFO  - b96413fb491a Pulling fs layer
+2025-10-20T06:21:14.566Z INFO  - c72c56726626 Pulling fs layer
+2025-10-20T06:21:14.566Z INFO  - 76d93c681ade Pulling fs layer
+2025-10-20T06:21:14.566Z INFO  - 80061c640d63 Pulling fs layer
+2025-10-20T06:21:14.566Z INFO  - 7b147c489cd8 Pulling fs layer
+2025-10-20T06:21:14.566Z INFO  - 48004ebc285d Pulling fs layer
+2025-10-20T06:21:14.566Z INFO  - 630b1f1894f8 Pulling fs layer
+2025-10-20T06:21:14.566Z INFO  - 62d7564f877c Pulling fs layer
+2025-10-20T06:21:14.573Z INFO  - ba431d1a5761 Pulling fs layer
+2025-10-20T06:21:14.949Z INFO  - 7b147c489cd8 Downloading 92B / 92B
+2025-10-20T06:21:14.950Z INFO  - 7b147c489cd8 Verifying Checksum
+2025-10-20T06:21:14.950Z INFO  - 7b147c489cd8 Download complete
+2025-10-20T06:21:14.950Z INFO  - 630b1f1894f8 Downloading 247B / 247B
+2025-10-20T06:21:14.950Z INFO  - 630b1f1894f8 Verifying Checksum
+2025-10-20T06:21:14.950Z INFO  - 630b1f1894f8 Download complete
+2025-10-20T06:21:14.965Z INFO  - 80061c640d63 Downloading 250B / 250B
+2025-10-20T06:21:14.966Z INFO  - 80061c640d63 Verifying Checksum
+2025-10-20T06:21:14.966Z INFO  - 80061c640d63 Download complete
+2025-10-20T06:21:15.127Z INFO  - c72c56726626 Downloading 1007KB / 4MB
+2025-10-20T06:21:15.138Z INFO  - ba431d1a5761 Downloading 527KB / 84MB
+2025-10-20T06:21:15.138Z INFO  - 76d93c681ade Downloading 1MB / 13MB
+2025-10-20T06:21:15.229Z INFO  - c72c56726626 Downloading 2MB / 4MB
+2025-10-20T06:21:15.319Z INFO  - ba431d1a5761 Downloading 2MB / 84MB
+2025-10-20T06:21:15.408Z INFO  - 48004ebc285d Downloading 527KB / 114MB
+2025-10-20T06:21:15.419Z INFO  - b96413fb491a Downloading 607KB / 29MB
+2025-10-20T06:21:15.539Z INFO  - c72c56726626 Verifying Checksum
+2025-10-20T06:21:15.540Z INFO  - c72c56726626 Download complete
+2025-10-20T06:21:15.631Z INFO  - 62d7564f877c Downloading 3MB / 8MB
+2025-10-20T06:21:15.650Z INFO  - b96413fb491a Downloading 2MB / 29MB
+2025-10-20T06:21:15.650Z INFO  - 48004ebc285d Downloading 2MB / 114MB
+2025-10-20T06:21:15.711Z INFO  - 48004ebc285d Downloading 4MB / 114MB
+2025-10-20T06:21:15.730Z INFO  - 76d93c681ade Downloading 5MB / 13MB
+2025-10-20T06:21:15.791Z INFO  - ba431d1a5761 Downloading 5MB / 84MB
+2025-10-20T06:21:15.942Z INFO  - 62d7564f877c Verifying Checksum
+2025-10-20T06:21:15.942Z INFO  - 62d7564f877c Download complete
+2025-10-20T06:21:15.983Z INFO  - b96413fb491a Downloading 5MB / 29MB
+2025-10-20T06:21:16.001Z INFO  - 76d93c681ade Downloading 7MB / 13MB
+2025-10-20T06:21:16.071Z INFO  - 48004ebc285d Downloading 7MB / 114MB
+2025-10-20T06:21:16.143Z INFO  - 76d93c681ade Downloading 9MB / 13MB
+2025-10-20T06:21:16.294Z INFO  - 76d93c681ade Downloading 10MB / 13MB
+2025-10-20T06:21:16.304Z INFO  - b96413fb491a Downloading 7MB / 29MB
+2025-10-20T06:21:16.424Z INFO  - 76d93c681ade Downloading 11MB / 13MB
+2025-10-20T06:21:16.424Z INFO  - ba431d1a5761 Downloading 10MB / 84MB
+2025-10-20T06:21:16.424Z INFO  - b96413fb491a Downloading 8MB / 29MB
+2025-10-20T06:21:16.493Z INFO  - 48004ebc285d Downloading 9MB / 114MB
+2025-10-20T06:21:16.565Z INFO  - b96413fb491a Downloading 8MB / 29MB
+2025-10-20T06:21:16.656Z INFO  - 76d93c681ade Downloading 13MB / 13MB
+2025-10-20T06:21:16.735Z INFO  - 76d93c681ade Verifying Checksum
+2025-10-20T06:21:16.736Z INFO  - 76d93c681ade Download complete
+2025-10-20T06:21:16.966Z INFO  - b96413fb491a Downloading 12MB / 29MB
+2025-10-20T06:21:16.966Z INFO  - 48004ebc285d Downloading 14MB / 114MB
+2025-10-20T06:21:16.986Z INFO  - ba431d1a5761 Downloading 15MB / 84MB
+2025-10-20T06:21:17.097Z INFO  - ba431d1a5761 Downloading 15MB / 84MB
+2025-10-20T06:21:17.238Z INFO  - 48004ebc285d Downloading 17MB / 114MB
+2025-10-20T06:21:17.288Z INFO  - ba431d1a5761 Downloading 17MB / 84MB
+2025-10-20T06:21:17.499Z INFO  - ba431d1a5761 Downloading 21MB / 84MB
+2025-10-20T06:21:17.569Z INFO  - b96413fb491a Downloading 18MB / 29MB
+2025-10-20T06:21:17.598Z INFO  - ba431d1a5761 Downloading 22MB / 84MB
+2025-10-20T06:21:17.629Z INFO  - 48004ebc285d Downloading 21MB / 114MB
+2025-10-20T06:21:17.780Z INFO  - 48004ebc285d Downloading 23MB / 114MB
+2025-10-20T06:21:17.798Z INFO  - ba431d1a5761 Downloading 24MB / 84MB
+2025-10-20T06:21:17.798Z INFO  - b96413fb491a Downloading 21MB / 29MB
+2025-10-20T06:21:18.001Z INFO  - ba431d1a5761 Downloading 28MB / 84MB
+2025-10-20T06:21:18.362Z INFO  - ba431d1a5761 Downloading 30MB / 84MB
+2025-10-20T06:21:18.541Z INFO  - ba431d1a5761 Downloading 32MB / 84MB
+2025-10-20T06:21:18.644Z INFO  - 48004ebc285d Downloading 29MB / 114MB
+2025-10-20T06:21:18.654Z INFO  - ba431d1a5761 Downloading 34MB / 84MB
+2025-10-20T06:21:18.684Z INFO  - b96413fb491a Verifying Checksum
+2025-10-20T06:21:18.685Z INFO  - b96413fb491a Download complete
+2025-10-20T06:21:18.826Z INFO  - 48004ebc285d Downloading 30MB / 114MB
+2025-10-20T06:21:18.904Z INFO  - ba431d1a5761 Downloading 35MB / 84MB
+2025-10-20T06:21:19.116Z INFO  - 48004ebc285d Downloading 35MB / 114MB
+2025-10-20T06:21:19.116Z INFO  - ba431d1a5761 Downloading 37MB / 84MB
+2025-10-20T06:21:19.368Z INFO  - 48004ebc285d Downloading 37MB / 114MB
+2025-10-20T06:21:19.547Z INFO  - ba431d1a5761 Downloading 39MB / 84MB
+2025-10-20T06:21:19.679Z INFO  - 48004ebc285d Downloading 39MB / 114MB
+2025-10-20T06:21:19.779Z INFO  - ba431d1a5761 Downloading 40MB / 84MB
+2025-10-20T06:21:20.049Z INFO  - ba431d1a5761 Downloading 41MB / 84MB
+2025-10-20T06:21:20.231Z INFO  - b96413fb491a Extracting 1MB / 29MB
+2025-10-20T06:21:20.505Z INFO  - 48004ebc285d Downloading 41MB / 114MB
+2025-10-20T06:21:20.824Z INFO  - b96413fb491a Extracting 2MB / 29MB
+2025-10-20T06:21:20.915Z INFO  - ba431d1a5761 Downloading 42MB / 84MB
+2025-10-20T06:21:21.125Z INFO  - 48004ebc285d Downloading 42MB / 114MB
+2025-10-20T06:21:21.327Z INFO  - b96413fb491a Extracting 4MB / 29MB
+2025-10-20T06:21:21.419Z INFO  - 48004ebc285d Downloading 43MB / 114MB
+2025-10-20T06:21:21.519Z INFO  - ba431d1a5761 Downloading 44MB / 84MB
+2025-10-20T06:21:21.778Z INFO  - ba431d1a5761 Downloading 45MB / 84MB
+2025-10-20T06:21:21.779Z INFO  - b96413fb491a Extracting 6MB / 29MB
+2025-10-20T06:21:21.921Z INFO  - b96413fb491a Extracting 7MB / 29MB
+2025-10-20T06:21:22.270Z INFO  - ba431d1a5761 Downloading 47MB / 84MB
+2025-10-20T06:21:22.363Z INFO  - 48004ebc285d Downloading 46MB / 114MB
+2025-10-20T06:21:22.363Z INFO  - b96413fb491a Extracting 9MB / 29MB
+2025-10-20T06:21:22.723Z INFO  - ba431d1a5761 Downloading 49MB / 84MB
+2025-10-20T06:21:22.815Z INFO  - 48004ebc285d Downloading 48MB / 114MB
+2025-10-20T06:21:22.964Z INFO  - b96413fb491a Extracting 10MB / 29MB
+2025-10-20T06:21:23.084Z INFO  - ba431d1a5761 Downloading 53MB / 84MB
+2025-10-20T06:21:23.167Z INFO  - 48004ebc285d Downloading 51MB / 114MB
+2025-10-20T06:21:23.286Z INFO  - 48004ebc285d Downloading 53MB / 114MB
+2025-10-20T06:21:23.569Z INFO  - ba431d1a5761 Downloading 56MB / 84MB
+2025-10-20T06:21:23.780Z INFO  - ba431d1a5761 Downloading 57MB / 84MB
+2025-10-20T06:21:23.921Z INFO  - ba431d1a5761 Downloading 58MB / 84MB
+2025-10-20T06:21:23.940Z INFO  - 48004ebc285d Downloading 55MB / 114MB
+2025-10-20T06:21:23.940Z INFO  - b96413fb491a Extracting 12MB / 29MB
+2025-10-20T06:21:24.272Z INFO  - 48004ebc285d Downloading 56MB / 114MB
+2025-10-20T06:21:24.281Z INFO  - b96413fb491a Extracting 14MB / 29MB
+2025-10-20T06:21:24.441Z INFO  - b96413fb491a Extracting 15MB / 29MB
+2025-10-20T06:21:24.551Z INFO  - ba431d1a5761 Downloading 59MB / 84MB
+2025-10-20T06:21:24.643Z INFO  - ba431d1a5761 Downloading 61MB / 84MB
+2025-10-20T06:21:24.643Z INFO  - 48004ebc285d Downloading 57MB / 114MB
+2025-10-20T06:21:24.643Z INFO  - b96413fb491a Extracting 16MB / 29MB
+2025-10-20T06:21:24.815Z INFO  - 48004ebc285d Downloading 60MB / 114MB
+2025-10-20T06:21:24.878Z INFO  - ba431d1a5761 Downloading 62MB / 84MB
+2025-10-20T06:21:24.898Z INFO  - b96413fb491a Extracting 17MB / 29MB
+2025-10-20T06:21:25.067Z INFO  - b96413fb491a Extracting 17MB / 29MB
+2025-10-20T06:21:25.168Z INFO  - b96413fb491a Extracting 19MB / 29MB
+2025-10-20T06:21:25.398Z INFO  - ba431d1a5761 Downloading 64MB / 84MB
+2025-10-20T06:21:25.399Z INFO  - b96413fb491a Extracting 20MB / 29MB
+2025-10-20T06:21:25.498Z INFO  - b96413fb491a Extracting 21MB / 29MB
+2025-10-20T06:21:25.760Z INFO  - b96413fb491a Extracting 23MB / 29MB
+2025-10-20T06:21:25.991Z INFO  - b96413fb491a Extracting 24MB / 29MB
+2025-10-20T06:21:26.083Z INFO  - b96413fb491a Extracting 25MB / 29MB
+2025-10-20T06:21:26.283Z INFO  - ba431d1a5761 Downloading 66MB / 84MB
+2025-10-20T06:21:26.415Z INFO  - ba431d1a5761 Downloading 68MB / 84MB
+2025-10-20T06:21:26.636Z INFO  - 48004ebc285d Downloading 67MB / 114MB
+2025-10-20T06:21:26.667Z INFO  - ba431d1a5761 Downloading 71MB / 84MB
+2025-10-20T06:21:26.889Z INFO  - 48004ebc285d Downloading 71MB / 114MB
+2025-10-20T06:21:26.928Z INFO  - b96413fb491a Extracting 25MB / 29MB
+2025-10-20T06:21:27.017Z INFO  - 48004ebc285d Downloading 72MB / 114MB
+2025-10-20T06:21:27.056Z INFO  - b96413fb491a Extracting 26MB / 29MB
+2025-10-20T06:21:27.129Z INFO  - ba431d1a5761 Downloading 74MB / 84MB
+2025-10-20T06:21:27.159Z INFO  - b96413fb491a Extracting 27MB / 29MB
+2025-10-20T06:21:27.380Z INFO  - 48004ebc285d Downloading 73MB / 114MB
+2025-10-20T06:21:27.613Z INFO  - b96413fb491a Extracting 27MB / 29MB
+2025-10-20T06:21:27.893Z INFO  - 48004ebc285d Downloading 78MB / 114MB
+2025-10-20T06:21:27.963Z INFO  - ba431d1a5761 Downloading 81MB / 84MB
+2025-10-20T06:21:28.054Z INFO  - 48004ebc285d Downloading 80MB / 114MB
+2025-10-20T06:21:28.065Z INFO  - ba431d1a5761 Downloading 83MB / 84MB
+2025-10-20T06:21:28.082Z INFO  - ba431d1a5761 Verifying Checksum
+2025-10-20T06:21:28.083Z INFO  - ba431d1a5761 Download complete
+2025-10-20T06:21:28.183Z INFO  - 48004ebc285d Downloading 83MB / 114MB
+2025-10-20T06:21:28.226Z INFO  - 48004ebc285d Downloading 85MB / 114MB
+2025-10-20T06:21:28.385Z INFO  - 48004ebc285d Downloading 87MB / 114MB
+2025-10-20T06:21:28.455Z INFO  - 48004ebc285d Downloading 89MB / 114MB
+2025-10-20T06:21:28.655Z INFO  - 48004ebc285d Downloading 92MB / 114MB
+2025-10-20T06:21:28.658Z INFO  - b96413fb491a Extracting 28MB / 29MB
+2025-10-20T06:21:28.808Z INFO  - 48004ebc285d Downloading 96MB / 114MB
+2025-10-20T06:21:29.047Z INFO  - 48004ebc285d Downloading 99MB / 114MB
+2025-10-20T06:21:29.298Z INFO  - 48004ebc285d Downloading 104MB / 114MB
+2025-10-20T06:21:29.400Z INFO  - 48004ebc285d Downloading 106MB / 114MB
+2025-10-20T06:21:29.541Z INFO  - b96413fb491a Extracting 29MB / 29MB
+2025-10-20T06:21:29.542Z INFO  - 48004ebc285d Downloading 108MB / 114MB
+2025-10-20T06:21:29.650Z INFO  - 48004ebc285d Downloading 111MB / 114MB
+2025-10-20T06:21:29.733Z INFO  - 48004ebc285d Verifying Checksum
+2025-10-20T06:21:29.733Z INFO  - 48004ebc285d Download complete
+2025-10-20T06:21:29.742Z INFO  - b96413fb491a Pull complete
+2025-10-20T06:21:30.123Z INFO  - c72c56726626 Extracting 832KB / 4MB
+2025-10-20T06:21:30.365Z INFO  - c72c56726626 Extracting 3MB / 4MB
+2025-10-20T06:21:30.505Z INFO  - c72c56726626 Extracting 3MB / 4MB
+2025-10-20T06:21:30.566Z INFO  - c72c56726626 Extracting 4MB / 4MB
+2025-10-20T06:21:30.588Z INFO  - c72c56726626 Pull complete
+2025-10-20T06:21:31.008Z INFO  - 76d93c681ade Extracting 640KB / 13MB
+2025-10-20T06:21:32.656Z INFO  - 76d93c681ade Extracting 7MB / 13MB
+2025-10-20T06:21:32.950Z INFO  - 76d93c681ade Extracting 9MB / 13MB
+2025-10-20T06:21:33.110Z INFO  - 76d93c681ade Extracting 9MB / 13MB
+2025-10-20T06:21:34.386Z INFO  - 76d93c681ade Extracting 12MB / 13MB
+2025-10-20T06:21:34.517Z INFO  - 76d93c681ade Extracting 12MB / 13MB
+2025-10-20T06:21:34.857Z INFO  - 76d93c681ade Extracting 13MB / 13MB
+2025-10-20T06:21:34.969Z INFO  - 76d93c681ade Pull complete
+2025-10-20T06:21:34.978Z INFO  - 80061c640d63 Extracting 250B / 250B
+2025-10-20T06:21:34.989Z INFO  - 80061c640d63 Extracting 250B / 250B
+2025-10-20T06:21:34.999Z INFO  - 80061c640d63 Pull complete
+2025-10-20T06:21:35.002Z INFO  - 7b147c489cd8 Extracting 92B / 92B
+2025-10-20T06:21:35.009Z INFO  - 7b147c489cd8 Extracting 92B / 92B
+2025-10-20T06:21:35.018Z INFO  - 7b147c489cd8 Pull complete
+2025-10-20T06:21:35.200Z INFO  - 48004ebc285d Extracting 544KB / 114MB
+2025-10-20T06:21:35.623Z INFO  - 48004ebc285d Extracting 3MB / 114MB
+2025-10-20T06:21:35.845Z INFO  - 48004ebc285d Extracting 5MB / 114MB
+2025-10-20T06:21:36.186Z INFO  - 48004ebc285d Extracting 7MB / 114MB
+2025-10-20T06:21:36.567Z INFO  - 48004ebc285d Extracting 9MB / 114MB
+2025-10-20T06:21:37.371Z INFO  - 48004ebc285d Extracting 14MB / 114MB
+2025-10-20T06:21:37.444Z INFO  - 48004ebc285d Extracting 17MB / 114MB
+2025-10-20T06:21:37.925Z INFO  - 48004ebc285d Extracting 18MB / 114MB
+2025-10-20T06:21:38.215Z INFO  - 48004ebc285d Extracting 20MB / 114MB
+2025-10-20T06:21:38.891Z INFO  - 48004ebc285d Extracting 26MB / 114MB
+2025-10-20T06:21:39.563Z INFO  - 48004ebc285d Extracting 27MB / 114MB
+2025-10-20T06:21:39.792Z INFO  - 48004ebc285d Extracting 28MB / 114MB
+2025-10-20T06:21:41.161Z INFO  - 48004ebc285d Extracting 30MB / 114MB
+2025-10-20T06:21:41.602Z INFO  - 48004ebc285d Extracting 34MB / 114MB
+2025-10-20T06:21:41.756Z INFO  - 48004ebc285d Extracting 35MB / 114MB
+2025-10-20T06:21:42.127Z INFO  - 48004ebc285d Extracting 37MB / 114MB
+2025-10-20T06:21:42.761Z INFO  - 48004ebc285d Extracting 39MB / 114MB
+2025-10-20T06:21:44.007Z INFO  - 48004ebc285d Extracting 44MB / 114MB
+2025-10-20T06:21:44.287Z INFO  - 48004ebc285d Extracting 46MB / 114MB
+2025-10-20T06:21:44.560Z INFO  - 48004ebc285d Extracting 48MB / 114MB
+2025-10-20T06:21:44.799Z INFO  - 48004ebc285d Extracting 51MB / 114MB
+2025-10-20T06:21:45.244Z INFO  - 48004ebc285d Extracting 53MB / 114MB
+2025-10-20T06:21:45.313Z INFO  - 48004ebc285d Extracting 55MB / 114MB
+2025-10-20T06:21:45.716Z INFO  - 48004ebc285d Extracting 57MB / 114MB
+2025-10-20T06:21:45.957Z INFO  - 48004ebc285d Extracting 60MB / 114MB
+2025-10-20T06:21:46.540Z INFO  - 48004ebc285d Extracting 62MB / 114MB
+2025-10-20T06:21:47.083Z INFO  - 48004ebc285d Extracting 64MB / 114MB
+2025-10-20T06:21:47.415Z INFO  - 48004ebc285d Extracting 66MB / 114MB
+2025-10-20T06:21:47.665Z INFO  - 48004ebc285d Extracting 69MB / 114MB
+2025-10-20T06:21:48.006Z INFO  - 48004ebc285d Extracting 72MB / 114MB
+2025-10-20T06:21:48.239Z INFO  - 48004ebc285d Extracting 74MB / 114MB
+2025-10-20T06:21:48.570Z INFO  - 48004ebc285d Extracting 76MB / 114MB
+2025-10-20T06:21:48.902Z INFO  - 48004ebc285d Extracting 78MB / 114MB
+2025-10-20T06:21:49.021Z INFO  - 48004ebc285d Extracting 79MB / 114MB
+2025-10-20T06:21:49.454Z INFO  - 48004ebc285d Extracting 80MB / 114MB
+2025-10-20T06:21:49.786Z INFO  - 48004ebc285d Extracting 82MB / 114MB
+2025-10-20T06:21:49.908Z INFO  - 48004ebc285d Extracting 83MB / 114MB
+2025-10-20T06:21:50.187Z INFO  - 48004ebc285d Extracting 85MB / 114MB
+2025-10-20T06:21:50.349Z INFO  - 48004ebc285d Extracting 86MB / 114MB
+2025-10-20T06:21:50.730Z INFO  - 48004ebc285d Extracting 87MB / 114MB
+2025-10-20T06:21:50.844Z INFO  - 48004ebc285d Extracting 88MB / 114MB
+2025-10-20T06:21:51.094Z INFO  - 48004ebc285d Extracting 90MB / 114MB
+2025-10-20T06:21:51.325Z INFO  - 48004ebc285d Extracting 91MB / 114MB
+2025-10-20T06:21:51.477Z INFO  - 48004ebc285d Extracting 92MB / 114MB
+2025-10-20T06:21:51.786Z INFO  - 48004ebc285d Extracting 95MB / 114MB
+2025-10-20T06:21:52.019Z INFO  - 48004ebc285d Extracting 96MB / 114MB
+2025-10-20T06:21:52.412Z INFO  - 48004ebc285d Extracting 99MB / 114MB
+2025-10-20T06:21:52.664Z INFO  - 48004ebc285d Extracting 101MB / 114MB
+2025-10-20T06:21:52.785Z INFO  - 48004ebc285d Extracting 102MB / 114MB
+2025-10-20T06:21:53.006Z INFO  - 48004ebc285d Extracting 104MB / 114MB
+2025-10-20T06:21:53.227Z INFO  - 48004ebc285d Extracting 106MB / 114MB
+2025-10-20T06:21:53.780Z INFO  - 48004ebc285d Extracting 108MB / 114MB
+2025-10-20T06:21:54.402Z INFO  - 48004ebc285d Extracting 111MB / 114MB
+2025-10-20T06:21:54.794Z INFO  - 48004ebc285d Extracting 112MB / 114MB
+2025-10-20T06:21:54.816Z INFO  - 48004ebc285d Extracting 113MB / 114MB
+2025-10-20T06:21:55.748Z INFO  - 48004ebc285d Extracting 114MB / 114MB
+2025-10-20T06:21:56.005Z INFO  - 48004ebc285d Pull complete
+2025-10-20T06:21:56.012Z INFO  - 630b1f1894f8 Extracting 247B / 247B
+2025-10-20T06:21:56.021Z INFO  - 630b1f1894f8 Extracting 247B / 247B
+2025-10-20T06:21:56.034Z INFO  - 630b1f1894f8 Pull complete
+2025-10-20T06:21:56.309Z INFO  - 62d7564f877c Extracting 576KB / 8MB
+2025-10-20T06:21:56.432Z INFO  - 62d7564f877c Extracting 1MB / 8MB
+2025-10-20T06:21:56.864Z INFO  - 62d7564f877c Extracting 1MB / 8MB
+2025-10-20T06:21:57.025Z INFO  - 62d7564f877c Extracting 2MB / 8MB
+2025-10-20T06:21:57.356Z INFO  - 62d7564f877c Extracting 2MB / 8MB
+2025-10-20T06:21:57.356Z INFO  - 62d7564f877c Extracting 3MB / 8MB
+2025-10-20T06:21:57.498Z INFO  - 62d7564f877c Extracting 3MB / 8MB
+2025-10-20T06:21:58.241Z INFO  - 62d7564f877c Extracting 3MB / 8MB
+2025-10-20T06:21:58.594Z INFO  - 62d7564f877c Extracting 3MB / 8MB
+2025-10-20T06:21:58.813Z INFO  - 62d7564f877c Extracting 4MB / 8MB
+2025-10-20T06:21:59.417Z INFO  - 62d7564f877c Extracting 4MB / 8MB
+2025-10-20T06:22:00.062Z INFO  - 62d7564f877c Extracting 4MB / 8MB
+2025-10-20T06:22:00.652Z INFO  - 62d7564f877c Extracting 4MB / 8MB
+2025-10-20T06:22:02.192Z INFO  - 62d7564f877c Extracting 5MB / 8MB
+2025-10-20T06:22:02.351Z INFO  - 62d7564f877c Extracting 5MB / 8MB
+2025-10-20T06:22:02.635Z INFO  - 62d7564f877c Extracting 5MB / 8MB
+2025-10-20T06:22:02.834Z INFO  - 62d7564f877c Extracting 5MB / 8MB
+2025-10-20T06:22:03.107Z INFO  - 62d7564f877c Extracting 6MB / 8MB
+2025-10-20T06:22:03.719Z INFO  - 62d7564f877c Extracting 6MB / 8MB
+2025-10-20T06:22:04.491Z INFO  - 62d7564f877c Extracting 7MB / 8MB
+2025-10-20T06:22:05.559Z INFO  - 62d7564f877c Extracting 8MB / 8MB
+2025-10-20T06:22:05.809Z INFO  - 62d7564f877c Extracting 8MB / 8MB
+2025-10-20T06:22:06.786Z INFO  - 62d7564f877c Extracting 8MB / 8MB
+2025-10-20T06:22:07.699Z INFO  - 62d7564f877c Pull complete
+2025-10-20T06:22:07.950Z INFO  - ba431d1a5761 Extracting 544KB / 84MB
+2025-10-20T06:22:08.575Z INFO  - ba431d1a5761 Extracting 2MB / 84MB
+2025-10-20T06:22:09.729Z INFO  - ba431d1a5761 Extracting 3MB / 84MB
+2025-10-20T06:22:13.437Z INFO  - ba431d1a5761 Extracting 5MB / 84MB
+2025-10-20T06:22:13.720Z INFO  - ba431d1a5761 Extracting 5MB / 84MB
+2025-10-20T06:22:14.140Z INFO  - ba431d1a5761 Extracting 6MB / 84MB
+2025-10-20T06:22:14.633Z INFO  - ba431d1a5761 Extracting 7MB / 84MB
+2025-10-20T06:22:15.197Z INFO  - ba431d1a5761 Extracting 8MB / 84MB
+2025-10-20T06:22:15.458Z INFO  - ba431d1a5761 Extracting 9MB / 84MB
+2025-10-20T06:22:16.303Z INFO  - ba431d1a5761 Extracting 10MB / 84MB
+2025-10-20T06:22:16.795Z INFO  - ba431d1a5761 Extracting 12MB / 84MB
+2025-10-20T06:22:17.818Z INFO  - ba431d1a5761 Extracting 14MB / 84MB
+2025-10-20T06:22:18.510Z INFO  - ba431d1a5761 Extracting 15MB / 84MB
+2025-10-20T06:22:20.029Z INFO  - ba431d1a5761 Extracting 15MB / 84MB
+2025-10-20T06:22:20.692Z INFO  - ba431d1a5761 Extracting 17MB / 84MB
+2025-10-20T06:22:21.113Z INFO  - ba431d1a5761 Extracting 17MB / 84MB
+2025-10-20T06:22:21.478Z INFO  - ba431d1a5761 Extracting 19MB / 84MB
+2025-10-20T06:22:21.979Z INFO  - ba431d1a5761 Extracting 20MB / 84MB
+2025-10-20T06:22:22.292Z INFO  - ba431d1a5761 Extracting 22MB / 84MB
+2025-10-20T06:22:22.292Z INFO  - ba431d1a5761 Extracting 23MB / 84MB
+2025-10-20T06:22:22.423Z INFO  - ba431d1a5761 Extracting 24MB / 84MB
+2025-10-20T06:22:22.875Z INFO  - ba431d1a5761 Extracting 25MB / 84MB
+2025-10-20T06:22:23.377Z INFO  - ba431d1a5761 Extracting 27MB / 84MB
+2025-10-20T06:22:24.069Z INFO  - ba431d1a5761 Extracting 27MB / 84MB
+2025-10-20T06:22:26.033Z INFO  - ba431d1a5761 Extracting 29MB / 84MB
+2025-10-20T06:22:27.790Z INFO  - ba431d1a5761 Extracting 30MB / 84MB
+2025-10-20T06:22:33.256Z INFO  - ba431d1a5761 Extracting 32MB / 84MB
+2025-10-20T06:22:33.728Z INFO  - ba431d1a5761 Extracting 32MB / 84MB
+2025-10-20T06:22:34.279Z INFO  - ba431d1a5761 Extracting 34MB / 84MB
+2025-10-20T06:22:34.602Z INFO  - ba431d1a5761 Extracting 34MB / 84MB
+2025-10-20T06:22:35.668Z INFO  - ba431d1a5761 Extracting 35MB / 84MB
+2025-10-20T06:22:36.171Z INFO  - ba431d1a5761 Extracting 36MB / 84MB
+2025-10-20T06:22:37.297Z INFO  - ba431d1a5761 Extracting 37MB / 84MB
+2025-10-20T06:22:39.027Z INFO  - ba431d1a5761 Extracting 39MB / 84MB
+2025-10-20T06:22:39.892Z INFO  - ba431d1a5761 Extracting 40MB / 84MB
+2025-10-20T06:22:40.244Z INFO  - ba431d1a5761 Extracting 41MB / 84MB
+2025-10-20T06:22:41.630Z INFO  - ba431d1a5761 Extracting 42MB / 84MB
+2025-10-20T06:22:42.857Z INFO  - ba431d1a5761 Extracting 43MB / 84MB
+2025-10-20T06:22:43.731Z INFO  - ba431d1a5761 Extracting 44MB / 84MB
+2025-10-20T06:22:44.877Z INFO  - ba431d1a5761 Extracting 47MB / 84MB
+2025-10-20T06:22:47.951Z INFO  - ba431d1a5761 Extracting 51MB / 84MB
+2025-10-20T06:22:48.465Z INFO  - ba431d1a5761 Extracting 52MB / 84MB
+2025-10-20T06:22:48.716Z INFO  - ba431d1a5761 Extracting 54MB / 84MB
+2025-10-20T06:22:48.957Z INFO  - ba431d1a5761 Extracting 56MB / 84MB
+2025-10-20T06:22:49.603Z INFO  - ba431d1a5761 Extracting 57MB / 84MB
+2025-10-20T06:22:49.771Z INFO  - ba431d1a5761 Extracting 59MB / 84MB
+2025-10-20T06:22:50.256Z INFO  - ba431d1a5761 Extracting 61MB / 84MB
+2025-10-20T06:22:50.801Z INFO  - ba431d1a5761 Extracting 61MB / 84MB
+2025-10-20T06:22:51.544Z INFO  - ba431d1a5761 Extracting 62MB / 84MB
+2025-10-20T06:22:52.247Z INFO  - ba431d1a5761 Extracting 63MB / 84MB
+2025-10-20T06:22:53.995Z INFO  - ba431d1a5761 Extracting 64MB / 84MB
+2025-10-20T06:22:54.972Z INFO  - ba431d1a5761 Extracting 66MB / 84MB
+2025-10-20T06:22:57.804Z INFO  - ba431d1a5761 Extracting 68MB / 84MB
+2025-10-20T06:22:58.418Z INFO  - ba431d1a5761 Extracting 68MB / 84MB
+2025-10-20T06:22:58.961Z INFO  - ba431d1a5761 Extracting 69MB / 84MB
+2025-10-20T06:22:59.111Z INFO  - ba431d1a5761 Extracting 70MB / 84MB
+2025-10-20T06:23:01.365Z INFO  - ba431d1a5761 Extracting 71MB / 84MB
+2025-10-20T06:23:01.616Z INFO  - ba431d1a5761 Extracting 71MB / 84MB
+2025-10-20T06:23:02.407Z INFO  - ba431d1a5761 Extracting 73MB / 84MB
+2025-10-20T06:23:02.942Z INFO  - ba431d1a5761 Extracting 74MB / 84MB
+2025-10-20T06:23:04.408Z INFO  - ba431d1a5761 Extracting 76MB / 84MB
+2025-10-20T06:23:04.408Z INFO  - ba431d1a5761 Extracting 78MB / 84MB
+2025-10-20T06:23:04.662Z INFO  - ba431d1a5761 Extracting 78MB / 84MB
+2025-10-20T06:23:05.031Z INFO  - ba431d1a5761 Extracting 79MB / 84MB
+2025-10-20T06:23:05.493Z INFO  - ba431d1a5761 Extracting 81MB / 84MB
+2025-10-20T06:23:05.685Z INFO  - ba431d1a5761 Extracting 81MB / 84MB
+2025-10-20T06:23:07.152Z INFO  - ba431d1a5761 Extracting 84MB / 84MB
+2025-10-20T06:23:10.075Z INFO  - ba431d1a5761 Pull complete
+2025-10-20T06:23:10.121Z INFO  -  Digest: sha256:909ca68aa83eab953bdc438dfbe4cf03d8a82b79e5c3de21b19fa3d125d59bc9
+2025-10-20T06:23:10.129Z INFO  -  Status: Downloaded newer image for gracealoneacr.azurecr.io/gracealone-api:v1
+2025-10-20T06:23:10.203Z INFO  - Pull Image successful, Time taken: 116 Seconds
+2025-10-20T06:23:10.507Z INFO  - Starting container for site
+2025-10-20T06:23:10.508Z INFO  - docker run -d --expose=80 --name gracealone-api_0_d5996451 -e WEBSITE_USE_DIAGNOSTIC_SERVER=false -e WEBSITES_ENABLE_APP_SERVICE_STORAGE=false -e WEBSITE_SITE_NAME=gracealone-api -e WEBSITE_AUTH_ENABLED=False -e PORT=80 -e WEBSITE_ROLE_INSTANCE_ID=0 -e WEBSITE_HOSTNAME=gracealone-api.azurewebsites.net -e WEBSITE_INSTANCE_ID=b0e2122ffb897ee16ce57fb431e00849d09afc37d8c8c169bf990b442f30c685 gracealoneacr.azurecr.io/gracealone-api:v1 
+2025-10-20T06:23:10.508Z INFO  - Logging is not enabled for this container.
+Please use https://aka.ms/linux-diagnostics to enable logging to see container logs here.
+2025-10-20T06:23:13.434Z INFO  - Initiating warmup request to container gracealone-api_0_d5996451 for site gracealone-api
+2025-10-20T06:23:13.600Z ERROR - Container gracealone-api_0_d5996451 for site gracealone-api has exited, failing site start
+2025-10-20T06:23:13.631Z ERROR - Container gracealone-api_0_d5996451 didn't respond to HTTP pings on port: 80. Failing site start. See container logs for debugging.
+2025-10-20T06:23:13.707Z INFO  - Stopping site gracealone-api because it failed during startup.
+2025-10-20T06:23:20.033Z INFO  - Pulling image: gracealoneacr.azurecr.io/gracealone-api:v1
+2025-10-20T06:23:20.387Z INFO  - v1 Pulling from gracealone-api
+2025-10-20T06:23:20.399Z INFO  -  Digest: sha256:909ca68aa83eab953bdc438dfbe4cf03d8a82b79e5c3de21b19fa3d125d59bc9
+2025-10-20T06:23:20.399Z INFO  -  Status: Image is up to date for gracealoneacr.azurecr.io/gracealone-api:v1
+2025-10-20T06:23:20.422Z INFO  - Pull Image successful, Time taken: 0 Seconds
+2025-10-20T06:23:20.500Z INFO  - Starting container for site
+2025-10-20T06:23:20.502Z INFO  - docker run -d --expose=80 --name gracealone-api_0_3fab2596 -e WEBSITE_USE_DIAGNOSTIC_SERVER=false -e WEBSITES_ENABLE_APP_SERVICE_STORAGE=false -e WEBSITE_SITE_NAME=gracealone-api -e WEBSITE_AUTH_ENABLED=False -e PORT=80 -e WEBSITE_ROLE_INSTANCE_ID=0 -e WEBSITE_HOSTNAME=gracealone-api.azurewebsites.net -e WEBSITE_INSTANCE_ID=b0e2122ffb897ee16ce57fb431e00849d09afc37d8c8c169bf990b442f30c685 gracealoneacr.azurecr.io/gracealone-api:v1 
+2025-10-20T06:23:20.502Z INFO  - Logging is not enabled for this container.
+Please use https://aka.ms/linux-diagnostics to enable logging to see container logs here.
+2025-10-20T06:23:22.880Z INFO  - Initiating warmup request to container gracealone-api_0_3fab2596 for site gracealone-api
+2025-10-20T06:23:22.989Z ERROR - Container gracealone-api_0_3fab2596 for site gracealone-api has exited, failing site start
+2025-10-20T06:23:23.010Z ERROR - Container gracealone-api_0_3fab2596 didn't respond to HTTP pings on port: 80. Failing site start. See container logs for debugging.
+2025-10-20T06:23:23.020Z INFO  - Stopping site gracealone-api because it failed during startup.
+2025-10-20T06:23:33.750Z INFO  - Pulling image: gracealoneacr.azurecr.io/gracealone-api:v1
+2025-10-20T06:23:34.081Z INFO  - v1 Pulling from gracealone-api
+2025-10-20T06:23:34.131Z INFO  -  Digest: sha256:909ca68aa83eab953bdc438dfbe4cf03d8a82b79e5c3de21b19fa3d125d59bc9
+2025-10-20T06:23:34.138Z INFO  -  Status: Image is up to date for gracealoneacr.azurecr.io/gracealone-api:v1
+2025-10-20T06:23:34.158Z INFO  - Pull Image successful, Time taken: 0 Seconds
+2025-10-20T06:23:34.420Z INFO  - Starting container for site
+2025-10-20T06:23:34.430Z INFO  - docker run -d --expose=80 --name gracealone-api_0_4adeaabd -e WEBSITE_USE_DIAGNOSTIC_SERVER=false -e WEBSITES_ENABLE_APP_SERVICE_STORAGE=false -e WEBSITE_SITE_NAME=gracealone-api -e WEBSITE_AUTH_ENABLED=False -e PORT=80 -e WEBSITE_ROLE_INSTANCE_ID=0 -e WEBSITE_HOSTNAME=gracealone-api.azurewebsites.net -e WEBSITE_INSTANCE_ID=b0e2122ffb897ee16ce57fb431e00849d09afc37d8c8c169bf990b442f30c685 gracealoneacr.azurecr.io/gracealone-api:v1 
+2025-10-20T06:23:34.430Z INFO  - Logging is not enabled for this container.
+Please use https://aka.ms/linux-diagnostics to enable logging to see container logs here.
+2025-10-20T06:23:37.508Z INFO  - Initiating warmup request to container gracealone-api_0_4adeaabd for site gracealone-api
+2025-10-20T06:23:37.580Z ERROR - Container gracealone-api_0_4adeaabd for site gracealone-api has exited, failing site start
+2025-10-20T06:23:37.600Z ERROR - Container gracealone-api_0_4adeaabd didn't respond to HTTP pings on port: 80. Failing site start. See container logs for debugging.
+2025-10-20T06:23:37.609Z INFO  - Stopping site gracealone-api because it failed during startup.
+2025-10-20T06:23:50.759Z INFO  - Pulling image: gracealoneacr.azurecr.io/gracealone-api:v1
+2025-10-20T06:23:50.911Z INFO  - v1 Pulling from gracealone-api
+2025-10-20T06:23:50.931Z INFO  -  Digest: sha256:909ca68aa83eab953bdc438dfbe4cf03d8a82b79e5c3de21b19fa3d125d59bc9
+2025-10-20T06:23:50.932Z INFO  -  Status: Image is up to date for gracealoneacr.azurecr.io/gracealone-api:v1
+2025-10-20T06:23:50.950Z INFO  - Pull Image successful, Time taken: 0 Seconds
+2025-10-20T06:23:51.011Z INFO  - Starting container for site
+2025-10-20T06:23:51.011Z INFO  - docker run -d --expose=80 --name gracealone-api_0_8e39cf01 -e WEBSITE_USE_DIAGNOSTIC_SERVER=false -e WEBSITES_ENABLE_APP_SERVICE_STORAGE=false -e WEBSITE_SITE_NAME=gracealone-api -e WEBSITE_AUTH_ENABLED=False -e PORT=80 -e WEBSITE_ROLE_INSTANCE_ID=0 -e WEBSITE_HOSTNAME=gracealone-api.azurewebsites.net -e WEBSITE_INSTANCE_ID=b0e2122ffb897ee16ce57fb431e00849d09afc37d8c8c169bf990b442f30c685 gracealoneacr.azurecr.io/gracealone-api:v1 
+2025-10-20T06:23:51.018Z INFO  - Logging is not enabled for this container.
+Please use https://aka.ms/linux-diagnostics to enable logging to see container logs here.
+2025-10-20T06:23:52.622Z INFO  - Initiating warmup request to container gracealone-api_0_8e39cf01 for site gracealone-api
+2025-10-20T06:23:52.650Z ERROR - Container gracealone-api_0_8e39cf01 for site gracealone-api has exited, failing site start
+2025-10-20T06:23:52.661Z ERROR - Container gracealone-api_0_8e39cf01 didn't respond to HTTP pings on port: 80. Failing site start. See container logs for debugging.
+2025-10-20T06:23:52.680Z INFO  - Stopping site gracealone-api because it failed during startup.
+2025-10-20T06:26:09.815Z INFO  - Pulling image: gracealoneacr.azurecr.io/gracealone-api:v1
+2025-10-20T06:26:09.967Z INFO  - v1 Pulling from gracealone-api
+2025-10-20T06:26:09.981Z INFO  -  Digest: sha256:909ca68aa83eab953bdc438dfbe4cf03d8a82b79e5c3de21b19fa3d125d59bc9
+2025-10-20T06:26:09.982Z INFO  -  Status: Image is up to date for gracealoneacr.azurecr.io/gracealone-api:v1
+2025-10-20T06:26:09.994Z INFO  - Pull Image successful, Time taken: 0 Seconds
+2025-10-20T06:26:10.063Z INFO  - Starting container for site
+2025-10-20T06:26:10.064Z INFO  - docker run -d --expose=80 --name gracealone-api_0_262aabdb -e WEBSITE_USE_DIAGNOSTIC_SERVER=false -e WEBSITES_ENABLE_APP_SERVICE_STORAGE=false -e WEBSITE_SITE_NAME=gracealone-api -e WEBSITE_AUTH_ENABLED=False -e PORT=80 -e WEBSITE_ROLE_INSTANCE_ID=0 -e WEBSITE_HOSTNAME=gracealone-api.azurewebsites.net -e WEBSITE_INSTANCE_ID=b0e2122ffb897ee16ce57fb431e00849d09afc37d8c8c169bf990b442f30c685 gracealoneacr.azurecr.io/gracealone-api:v1 REDACTED
+2025-10-20T06:26:10.064Z INFO  - Logging is not enabled for this container.
+Please use https://aka.ms/linux-diagnostics to enable logging to see container logs here.
+2025-10-20T06:26:11.711Z INFO  - Initiating warmup request to container gracealone-api_0_262aabdb for site gracealone-api
+2025-10-20T06:26:27.356Z INFO  - Waiting for response to warmup request for container gracealone-api_0_262aabdb. Elapsed time = 15.6446679 sec
+2025-10-20T06:26:42.667Z INFO  - Waiting for response to warmup request for container gracealone-api_0_262aabdb. Elapsed time = 30.9551006 sec
+2025-10-20T06:26:57.913Z INFO  - Waiting for response to warmup request for container gracealone-api_0_262aabdb. Elapsed time = 46.2014018 sec
+2025-10-20T06:27:13.314Z INFO  - Waiting for response to warmup request for container gracealone-api_0_262aabdb. Elapsed time = 61.6024413 sec
+2025-10-20T06:27:28.797Z INFO  - Waiting for response to warmup request for container gracealone-api_0_262aabdb. Elapsed time = 77.0853774 sec
+2025-10-20T06:27:44.065Z INFO  - Waiting for response to warmup request for container gracealone-api_0_262aabdb. Elapsed time = 92.3532482 sec
+2025-10-20T06:27:59.283Z INFO  - Waiting for response to warmup request for container gracealone-api_0_262aabdb. Elapsed time = 107.5718482 sec
+2025-10-20T06:28:15.940Z INFO  - Waiting for response to warmup request for container gracealone-api_0_262aabdb. Elapsed time = 124.2286148 sec
+2025-10-20T06:28:32.362Z INFO  - Waiting for response to warmup request for container gracealone-api_0_262aabdb. Elapsed time = 140.6502973 sec
+2025-10-20T06:28:47.519Z INFO  - Waiting for response to warmup request for container gracealone-api_0_262aabdb. Elapsed time = 155.8073044 sec
+2025-10-20T06:29:03.639Z INFO  - Waiting for response to warmup request for container gracealone-api_0_262aabdb. Elapsed time = 171.9274694 sec
+2025-10-20T06:29:20.332Z INFO  - Waiting for response to warmup request for container gracealone-api_0_262aabdb. Elapsed time = 188.6204439 sec
+2025-10-20T06:29:35.746Z INFO  - Waiting for response to warmup request for container gracealone-api_0_262aabdb. Elapsed time = 204.0341302 sec
+2025-10-20T06:29:51.621Z INFO  - Waiting for response to warmup request for container gracealone-api_0_262aabdb. Elapsed time = 219.9100137 sec
+2025-10-20T06:30:03.325Z ERROR - Container gracealone-api_0_262aabdb for site gracealone-api did not start within expected time limit. Elapsed time = 231.6136651 sec
+2025-10-20T06:30:03.908Z ERROR - Container gracealone-api_0_262aabdb didn't respond to HTTP pings on port: 80. Failing site start. See container logs for debugging.
+2025-10-20T06:30:05.064Z INFO  - Stopping site gracealone-api because it failed during startup.
+2025-10-20T06:33:25.8959051Z Container start method called.
+2025-10-20T06:33:25.9150294Z Establishing network.
+2025-10-20T06:33:25.9152195Z Pulling image: gracealoneacr.azurecr.io/gracealone-api:v1.
+2025-10-20T06:33:27.2980127Z Container is starting.
+2025-10-20T06:33:27.3045508Z Establishing user namespace if not established already.
+2025-10-20T06:33:27.3052967Z Establishing network if not established already.
+2025-10-20T06:33:27.3054333Z Mounting volumes.
+2025-10-20T06:33:27.3056457Z Nested mountpoint volatile/logs
+2025-10-20T06:33:27.3257311Z Nested mountpoint 
+2025-10-20T06:33:27.4160627Z Creating container.
+2025-10-20T06:33:27.4163342Z Creating pipes for streaming container io.
+2025-10-20T06:33:27.4177058Z Creating stdout named pipe at /podr/container/pipe/bbba35bf98c8_gracealone-api/stdout_7e1e4217717242f69706df5f9688851e.
+2025-10-20T06:33:27.4677374Z Successfully created stdout named pipe at: /podr/container/pipe/bbba35bf98c8_gracealone-api/stdout_7e1e4217717242f69706df5f9688851e.
+2025-10-20T06:33:27.4678310Z Opening named pipe /podr/container/pipe/bbba35bf98c8_gracealone-api/stdout_7e1e4217717242f69706df5f9688851e for reading in non-blocking mode.
+2025-10-20T06:33:27.4679246Z Successfully opened named pipe: /podr/container/pipe/bbba35bf98c8_gracealone-api/stdout_7e1e4217717242f69706df5f9688851e.
+2025-10-20T06:33:27.4679976Z Successfully removed non-blocking flag from /podr/container/pipe/bbba35bf98c8_gracealone-api/stdout_7e1e4217717242f69706df5f9688851e.
+2025-10-20T06:33:27.4868017Z Creating stderr named pipe at /podr/container/pipe/bbba35bf98c8_gracealone-api/stderr_efda9ff827754c4bb25131f0cd475192.
+2025-10-20T06:33:27.4875358Z Successfully created stderr named pipe at: /podr/container/pipe/bbba35bf98c8_gracealone-api/stderr_efda9ff827754c4bb25131f0cd475192.
+2025-10-20T06:33:27.5055538Z Opening named pipe /podr/container/pipe/bbba35bf98c8_gracealone-api/stderr_efda9ff827754c4bb25131f0cd475192 for reading in non-blocking mode.
+2025-10-20T06:33:27.5062574Z Successfully opened named pipe: /podr/container/pipe/bbba35bf98c8_gracealone-api/stderr_efda9ff827754c4bb25131f0cd475192.
+2025-10-20T06:33:27.5066174Z Successfully removed non-blocking flag from /podr/container/pipe/bbba35bf98c8_gracealone-api/stderr_efda9ff827754c4bb25131f0cd475192.
+2025-10-20T06:33:27.5075433Z Overriding PORT environment variable with port exposed by container image.
+2025-10-20T06:33:27.6593473Z Container image does not expose any ports. Defaulting to port 80
+2025-10-20T06:33:27.6666092Z Setting value of PORT variable to 80
+2025-10-20T06:33:27.6671194Z Creating container with image: gracealoneacr.azurecr.io/gracealone-api:v1 from registry: gracealoneacr.azurecr.io and fully qualified image name: gracealoneacr.azurecr.io/gracealone-api:v1
+2025-10-20T06:33:28.1345028Z Starting container: bbba35bf98c8_gracealone-api.
+2025-10-20T06:33:28.2131797Z Starting watchers and probes.
+2025-10-20T06:33:28.2135102Z Starting metrics collection.
+2025-10-20T06:33:28.2204613Z Container is running.
+2025-10-20T06:33:28.3308709Z Container start method finished after 2399 ms.
+2025-10-20T06:37:18.5622148Z Site startup probe failed after 230.0685352 seconds.
+2025-10-20T06:37:18.6907615Z Failed to start site. Revert by stopping site.
+2025-10-20T06:37:18.7009618Z Container is terminating. Grace period: 5 seconds.
+2025-10-20T06:37:18.7217547Z Stop and delete container. Retry count = 0
+2025-10-20T06:37:18.7228151Z Stopping container: bbba35bf98c8_gracealone-api.
+2025-10-20T06:37:20.1101142Z Deleting container: bbba35bf98c8_gracealone-api. Retry count = 0
+2025-10-20T06:37:20.7025397Z Container spec TerminationMessagePolicy  path 
+2025-10-20T06:37:20.7212900Z Container is terminated. Total time elapsed: 2001 ms.
+2025-10-20T06:37:20.7229269Z Site container: gracealone-api terminated during site startup.
+2025-10-20T06:37:20.8012825Z Site: gracealone-api stopped.
+2025-10-20T06:37:24.7120668Z Container start method called.
+2025-10-20T06:37:24.7323272Z Establishing network.
+2025-10-20T06:37:24.7329548Z Pulling image: gracealoneacr.azurecr.io/gracealone-api:v1.
+2025-10-20T06:37:25.2072804Z Container is starting.
+2025-10-20T06:37:25.2169305Z Establishing user namespace if not established already.
+2025-10-20T06:37:25.2349169Z Establishing network if not established already.
+2025-10-20T06:37:25.2351428Z Mounting volumes.
+2025-10-20T06:37:25.2354568Z Nested mountpoint volatile/logs
+2025-10-20T06:37:25.2446124Z Nested mountpoint 
+2025-10-20T06:37:25.3754149Z Creating container.
+2025-10-20T06:37:25.3768132Z Creating pipes for streaming container io.
+2025-10-20T06:37:25.3778899Z Creating stdout named pipe at /podr/container/pipe/5bd0b4cb98f3_gracealone-api/stdout_203f743ce2f44aba8a3ea479bb9aefc2.
+2025-10-20T06:37:25.4070714Z Successfully created stdout named pipe at: /podr/container/pipe/5bd0b4cb98f3_gracealone-api/stdout_203f743ce2f44aba8a3ea479bb9aefc2.
+2025-10-20T06:37:25.4075200Z Opening named pipe /podr/container/pipe/5bd0b4cb98f3_gracealone-api/stdout_203f743ce2f44aba8a3ea479bb9aefc2 for reading in non-blocking mode.
+2025-10-20T06:37:25.4367082Z Successfully opened named pipe: /podr/container/pipe/5bd0b4cb98f3_gracealone-api/stdout_203f743ce2f44aba8a3ea479bb9aefc2.
+2025-10-20T06:37:25.4383080Z Successfully removed non-blocking flag from /podr/container/pipe/5bd0b4cb98f3_gracealone-api/stdout_203f743ce2f44aba8a3ea479bb9aefc2.
+2025-10-20T06:37:25.4454933Z Creating stderr named pipe at /podr/container/pipe/5bd0b4cb98f3_gracealone-api/stderr_048bfc9d535d487cbd41ffa1c5f5b05f.
+2025-10-20T06:37:25.4461563Z Successfully created stderr named pipe at: /podr/container/pipe/5bd0b4cb98f3_gracealone-api/stderr_048bfc9d535d487cbd41ffa1c5f5b05f.
+2025-10-20T06:37:25.4471520Z Opening named pipe /podr/container/pipe/5bd0b4cb98f3_gracealone-api/stderr_048bfc9d535d487cbd41ffa1c5f5b05f for reading in non-blocking mode.
+2025-10-20T06:37:25.4474941Z Successfully opened named pipe: /podr/container/pipe/5bd0b4cb98f3_gracealone-api/stderr_048bfc9d535d487cbd41ffa1c5f5b05f.
+2025-10-20T06:37:25.4486197Z Successfully removed non-blocking flag from /podr/container/pipe/5bd0b4cb98f3_gracealone-api/stderr_048bfc9d535d487cbd41ffa1c5f5b05f.
+2025-10-20T06:37:25.4579456Z Overriding PORT environment variable with port exposed by container image.
+2025-10-20T06:37:25.5474812Z Container image does not expose any ports. Defaulting to port 80
+2025-10-20T06:37:25.5481265Z Setting value of PORT variable to 80
+2025-10-20T06:37:25.5489874Z Creating container with image: gracealoneacr.azurecr.io/gracealone-api:v1 from registry: gracealoneacr.azurecr.io and fully qualified image name: gracealoneacr.azurecr.io/gracealone-api:v1
+2025-10-20T06:37:26.0020990Z Starting container: 5bd0b4cb98f3_gracealone-api.
+2025-10-20T06:37:26.0892313Z Starting watchers and probes.
+2025-10-20T06:37:26.1294096Z Starting metrics collection.
+2025-10-20T06:37:26.1409632Z Container is running.
+2025-10-20T06:37:26.2924892Z Container start method finished after 1569 ms.
+2025-10-20T06:41:16.3261570Z Site startup probe failed after 230.0145997 seconds.
+2025-10-20T06:41:16.3557491Z Failed to start site. Revert by stopping site.
+2025-10-20T06:41:16.3657365Z Container is terminating. Grace period: 5 seconds.
+2025-10-20T06:41:16.3849779Z Stop and delete container. Retry count = 0
+2025-10-20T06:41:16.3859997Z Stopping container: 5bd0b4cb98f3_gracealone-api.
+2025-10-20T06:41:16.8901820Z Deleting container: 5bd0b4cb98f3_gracealone-api. Retry count = 0
+2025-10-20T06:41:17.0837251Z Container spec TerminationMessagePolicy  path 
+2025-10-20T06:41:17.0912718Z Container is terminated. Total time elapsed: 717 ms.
+2025-10-20T06:41:17.0924829Z Site container: gracealone-api terminated during site startup.
+2025-10-20T06:41:17.0936363Z Site: gracealone-api stopped.
+2025-10-20T06:42:05.6025774Z Container start method called.
+2025-10-20T06:42:05.6037020Z Establishing network.
+2025-10-20T06:42:05.6038613Z Pulling image: gracealoneacr.azurecr.io/gracealone-api:v1.
+2025-10-20T06:42:06.4466506Z Container is starting.
+2025-10-20T06:42:06.4467916Z Establishing user namespace if not established already.
+2025-10-20T06:42:06.4468758Z Establishing network if not established already.
+2025-10-20T06:42:06.4469575Z Mounting volumes.
+2025-10-20T06:42:06.4543418Z Nested mountpoint volatile/logs
+2025-10-20T06:42:06.5274724Z Nested mountpoint 
+2025-10-20T06:42:06.5763976Z Creating container.
+2025-10-20T06:42:06.5852164Z Creating pipes for streaming container io.
+2025-10-20T06:42:06.5857110Z Creating stdout named pipe at /podr/container/pipe/0ebde9cdf006_gracealone-api/stdout_a39fca924b8146beaef927468eec17be.
+2025-10-20T06:42:06.5863553Z Successfully created stdout named pipe at: /podr/container/pipe/0ebde9cdf006_gracealone-api/stdout_a39fca924b8146beaef927468eec17be.
+2025-10-20T06:42:06.5871451Z Opening named pipe /podr/container/pipe/0ebde9cdf006_gracealone-api/stdout_a39fca924b8146beaef927468eec17be for reading in non-blocking mode.
+2025-10-20T06:42:06.5878740Z Successfully opened named pipe: /podr/container/pipe/0ebde9cdf006_gracealone-api/stdout_a39fca924b8146beaef927468eec17be.
+2025-10-20T06:42:06.6077835Z Successfully removed non-blocking flag from /podr/container/pipe/0ebde9cdf006_gracealone-api/stdout_a39fca924b8146beaef927468eec17be.
+2025-10-20T06:42:06.6079850Z Creating stderr named pipe at /podr/container/pipe/0ebde9cdf006_gracealone-api/stderr_edc8fcf3a4af40538978642aee8d6709.
+2025-10-20T06:42:06.6250234Z Successfully created stderr named pipe at: /podr/container/pipe/0ebde9cdf006_gracealone-api/stderr_edc8fcf3a4af40538978642aee8d6709.
+2025-10-20T06:42:06.6262512Z Opening named pipe /podr/container/pipe/0ebde9cdf006_gracealone-api/stderr_edc8fcf3a4af40538978642aee8d6709 for reading in non-blocking mode.
+2025-10-20T06:42:06.6273412Z Successfully opened named pipe: /podr/container/pipe/0ebde9cdf006_gracealone-api/stderr_edc8fcf3a4af40538978642aee8d6709.
+2025-10-20T06:42:06.6376320Z Successfully removed non-blocking flag from /podr/container/pipe/0ebde9cdf006_gracealone-api/stderr_edc8fcf3a4af40538978642aee8d6709.
+2025-10-20T06:42:06.6377360Z Overriding PORT environment variable with port exposed by container image.
+2025-10-20T06:42:06.7070913Z Container image does not expose any ports. Defaulting to port 80
+2025-10-20T06:42:06.7072351Z Setting value of PORT variable to 80
+2025-10-20T06:42:06.7082257Z Creating container with image: gracealoneacr.azurecr.io/gracealone-api:v1 from registry: gracealoneacr.azurecr.io and fully qualified image name: gracealoneacr.azurecr.io/gracealone-api:v1
+2025-10-20T06:42:07.0682016Z Starting container: 0ebde9cdf006_gracealone-api.
+2025-10-20T06:42:07.1313921Z Starting watchers and probes.
+2025-10-20T06:42:07.1321768Z Starting metrics collection.
+2025-10-20T06:42:07.1324159Z Container is running.
+2025-10-20T06:42:07.2616754Z Container start method finished after 1640 ms.
+2025-10-20T06:45:57.7446069Z Site startup probe failed after 230.4640166 seconds.
+2025-10-20T06:45:57.7541956Z Failed to start site. Revert by stopping site.
+2025-10-20T06:45:57.7648529Z Container is terminating. Grace period: 5 seconds.
+2025-10-20T06:45:57.7746954Z Stop and delete container. Retry count = 0
+2025-10-20T06:45:57.7752811Z Stopping container: 0ebde9cdf006_gracealone-api.
+2025-10-20T06:45:58.3189849Z Deleting container: 0ebde9cdf006_gracealone-api. Retry count = 0
+2025-10-20T06:45:58.5903140Z Container spec TerminationMessagePolicy  path 
+2025-10-20T06:45:58.5914618Z Container is terminated. Total time elapsed: 825 ms.
+2025-10-20T06:45:58.5991052Z Site container: gracealone-api terminated during site startup.
+2025-10-20T06:45:58.5997320Z Site: gracealone-api stopped.

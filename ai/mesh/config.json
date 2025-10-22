@@ -1,0 +1,15 @@
+﻿{
+  "mesh": {
+    "nodes": ["api", "celery", "redis", "db"],
+    "heartbeat_interval": 10,
+    "command_port": 50055
+  },
+  "autoscale": {
+    "enabled": true,
+    "target_cpu": 65
+  },
+  "governance": {
+    "allow_self_heal": true,
+    "log_all_events": true
+  }
+}

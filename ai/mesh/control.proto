@@ -1,0 +1,15 @@
+﻿syntax = 'proto3';
+
+service ControlMesh {
+  rpc SendCommand (CommandRequest) returns (CommandResponse);
+}
+
+message CommandRequest {
+  string service = 1;
+  string action = 2;
+}
+
+message CommandResponse {
+  string status = 1;
+  string message = 2;
+}

@@ -1,0 +1,3 @@
+﻿*/3 * * * * /usr/bin/python3 /home/ubuntu/gracealoneaba/ai/infinite/fabric.py
+*/4 * * * * /usr/bin/python3 /home/ubuntu/gracealoneaba/ai/simulation/core.py
+*/5 * * * * /usr/bin/python3 /home/ubuntu/gracealoneaba/ai/evolution/core.py

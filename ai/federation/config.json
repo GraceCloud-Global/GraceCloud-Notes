@@ -1,0 +1,12 @@
+﻿{
+  "mesh_nodes": ["node-a", "node-b", "node-c"],
+  "heartbeat": 10,
+  "election": {
+    "enabled": true,
+    "strategy": "randomized"
+  },
+  "meta_brain": {
+    "merge_interval": 60,
+    "coherence_threshold": 0.75
+  }
+}

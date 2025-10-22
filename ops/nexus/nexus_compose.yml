@@ -1,0 +1,11 @@
+﻿version: '3.9'
+services:
+  nexus-api:
+    image: gracealone/nexus-api:latest
+    ports: ['10000:10000']
+  nexus-worker:
+    image: gracealone/nexus-worker:latest
+    ports: ['10001:10001']
+networks:
+  nexus-net:
+    driver: bridge

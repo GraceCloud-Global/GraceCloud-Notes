@@ -1,0 +1,26 @@
+﻿name: Quantum-AI
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+jobs:
+  quantum_ai:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: |
+          python ai/quantum/decision_core.py
+          python ai/consensus/raft.py
+          python ai/adaptive/cognition.py
+      - name: Upload Quantum Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: quantum-intelligence
+          path: |
+            ai/quantum/decision.json
+            ai/consensus/state.json
+            ai/adaptive/memory.json

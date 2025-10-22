@@ -1,0 +1,23 @@
+﻿name: AI-Intelligence
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+jobs:
+  ai_intel:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run AI Intelligence Cycle
+        run: |
+          python ai/predictive/governance.py
+          python ai/collab/matrix.py
+          python ai/insight/analysis.py
+      - name: Upload AI Intelligence Reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: ai-intelligence
+          path: |
+            ai/predictive/governance_state.json
+            ai/collab/state.json
+            ai/insight/trends.json

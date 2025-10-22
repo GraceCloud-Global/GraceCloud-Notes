@@ -1,0 +1,27 @@
+﻿name: Planetary-Control
+on:
+  schedule:
+    - cron: '*/20 * * * *'
+  workflow_dispatch:
+jobs:
+  planetary_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run Global Fabric Sync
+        run: |
+          python infra/fabric/controller.py
+          python infra/autoscaler/brain.py
+          python ai/planetary/sync.py
+      - name: Upload Global State
+        uses: actions/upload-artifact@v4
+        with:
+          name: global-fabric
+          path: |
+            infra/fabric/state.json
+            infra/autoscaler/log.json
+            ai/planetary/state.json
