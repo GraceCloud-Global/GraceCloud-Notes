@@ -1,0 +1,5 @@
+﻿{
+  "properties": {
+    "linuxFxVersion": "DOCKER|gracealoneacr.azurecr.io/gracealone-api:v27"
+  }
+}
