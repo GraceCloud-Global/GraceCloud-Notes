@@ -1,4 +1,4 @@
-﻿name: AI-Intelligence
+name: AI-Intelligence
 on:
   schedule:
     - cron: '*/10 * * * *'
@@ -7,7 +7,7 @@ jobs:
   ai_intel:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Run AI Intelligence Cycle
         run: |
           python ai/predictive/governance.py
