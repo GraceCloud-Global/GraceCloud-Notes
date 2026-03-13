@@ -1,4 +1,4 @@
-﻿name: Supra-Intelligence
+name: Supra-Intelligence
 on:
   schedule:
     - cron: '*/25 * * * *'
@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.11'
       - run: |
