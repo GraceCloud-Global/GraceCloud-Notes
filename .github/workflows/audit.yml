@@ -1,4 +1,4 @@
-﻿name: Governance-Audit
+name: Governance-Audit
 on:
   schedule:
     - cron: '0 4 * * *'
@@ -19,7 +19,7 @@ jobs:
           python ai/auditor/static_audit.py
           python ai/governance/validate.py
       - name: Upload Audit Reports
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: governance-reports
           path: |

@@ -1,4 +1,4 @@
-﻿name: Eternal-Nexus
+name: Eternal-Nexus
 on:
   schedule:
     - cron: '*/15 * * * *'
@@ -17,7 +17,7 @@ jobs:
           python ai/dimensional/core.py
           python ai/knowledge/generator.py
       - name: Upload Nexus State
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: eternal-nexus
           path: |

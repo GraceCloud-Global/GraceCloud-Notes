@@ -1,4 +1,4 @@
-﻿name: Planetary-Control
+name: Planetary-Control
 on:
   schedule:
     - cron: '*/20 * * * *'
@@ -18,7 +18,7 @@ jobs:
           python infra/autoscaler/brain.py
           python ai/planetary/sync.py
       - name: Upload Global State
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: global-fabric
           path: |
