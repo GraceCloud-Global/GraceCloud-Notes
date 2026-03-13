@@ -1,7 +1,7 @@
-﻿# ======================================
+# ======================================
 #  GraceAlone API Dockerfile (v23)
 # ======================================
-FROM python:3.11-slim
+FROM python:3.14-slim
 
 # Set environment vars
 ENV PYTHONDONTWRITEBYTECODE=1
