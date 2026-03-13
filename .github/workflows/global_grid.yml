@@ -1,4 +1,4 @@
-﻿name: Global-Cognitive-Grid
+name: Global-Cognitive-Grid
 on:
   schedule:
     - cron: '*/20 * * * *'
@@ -18,7 +18,7 @@ jobs:
           python ai/awareness/engine.py
           python ai/sync/grid.py
       - name: Upload Grid State
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: cognitive-grid
           path: |

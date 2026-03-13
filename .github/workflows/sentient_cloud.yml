@@ -1,4 +1,4 @@
-﻿name: Sentient-Cloud
+name: Sentient-Cloud
 on:
   schedule:
     - cron: '*/30 * * * *'
@@ -19,7 +19,7 @@ jobs:
           python ai/sentience/network.py
           python infra/sentient/governance.py
       - name: Upload Sentient State
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: sentient-cloud
           path: |
